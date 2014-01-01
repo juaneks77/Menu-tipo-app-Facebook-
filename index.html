@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="apple-mobile-web-app-capable"  content="yes" />
+	<meta name="viewport" content=" user-scalable=no, width: device-width" />
+	<title>Menu tipo Facebook</title>
+	 <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+        <link rel="stylesheet" href="estilos.css">
+
+        <script type="text/javascript">
+        $(document).on('ready',function(){
+        	var control = 0;
+        	$('#boton').on('click',function(){
+        			if(control == 0){
+        				$('#pagina').animate({
+        					marginLeft: '240px'
+        				});
+        				control ++;
+        			}else{
+        				$('#pagina').animate({
+        					marginLeft: '0'
+        				});
+        				control --;
+        			}
+        	});
+        });
+        </script>
+</head>
+<body>
+<div id="contenedor">
+	<nav>
+		<li>
+		<a href="#">Inicio</a>
+		</li>
+		<li>
+		<a href="#">Mensajes</a>
+		</li>
+		<li>
+		<a href="#">Grupos</a>
+		</li>
+		<li>
+		<a href="#">Amigos</a>
+		</li>
+		<li>
+		<a href="#">Solicitudes</a>
+		</li>
+	</nav>
+	<div id="pagina">
+		<div id="marcadores">
+			<img width="35px" id="boton" src="iconoMenu.png" alt="menu" />
+		</div>
+		<article>
+			<h2>primer bloque</h2>
+			<p>
+				Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially 
+			</p>
+			<h2>segundo bloque</h2>
+			<p>
+				Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially 
+			</p>
+			<h2>tercer bloque</h2>
+			<p>
+				Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially 
+			</p>
+		</article>
+	</div>
+</div>
+	
+</body>
+</html>
