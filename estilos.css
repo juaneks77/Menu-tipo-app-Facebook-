@@ -62,7 +62,7 @@ p
 	background-color: rgb(211, 233, 238);
 	position: absolute;
 	top: 0;
-	width: 320px;
+	width:100%;
 	z-index: 1;
 }
 #marcadores
